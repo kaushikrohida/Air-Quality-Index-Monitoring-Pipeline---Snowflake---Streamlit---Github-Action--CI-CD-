@@ -4,7 +4,6 @@
 
 **Transforming Air Quality Insights**: A fully automated end-to-end data pipeline and interactive dashboard suite for monitoring AQI across 500+ stations in India, built with Snowflake, Snowpark, Python, GitHub Actions, and Streamlit.
 
----
 
 ## Project Overview
 
@@ -23,7 +22,6 @@ This repository hosts an end-to-end data engineering project that ingests, proce
 - **REST API**: Data source ([data.gov.in](https://www.data.gov.in/)).
 - **Streamlit**: Dashboards hosted on Streamlit Cloud and Snowflake.
 
----
 
 ## Project Highlights
 
@@ -56,7 +54,6 @@ This repository hosts an end-to-end data engineering project that ingests, proce
   - Integrates GitHub Actions for real-time API data ingestion.
   - Fully automates the pipeline, ensuring uninterrupted data flow without manual oversight.
 
----
 
 ## Snowflake Database Structure
 The database (DEV_DB) is organized into multiple schemas:
@@ -87,6 +84,7 @@ The database (DEV_DB) is organized into multiple schemas:
         - DATE_DIM: Date dimension table (Target Lag: 30 mins).
         - LOCATION_DIM: Location dimension table (Target Lag: 30 mins).
         - AIR_QUALITY_FACT: Fact table for hourly AQI measurements (Target Lag: 30 mins).
+
 
 ## Pipeline Workflow
 ### Architecture Overview
@@ -126,6 +124,7 @@ The pipeline follows a multi-layered architecture on Snowflake (AWS), as depicte
 6. **End Users**:
     - Access dashboards for real-time AQI insights.
 
+
 ## Streamlit Applications
 1. **Location App**:
     - Features: Station-level AQI, map integration, filters (state, city, station, date).
@@ -160,9 +159,11 @@ The pipeline follows a multi-layered architecture on Snowflake (AWS), as depicte
 
 This project successfully delivers a robust, automated, and scalable solution for monitoring the Air Quality Index (AQI) across 500+ stations in India. By leveraging Snowflake's cloud data platform, GitHub Actions for real-time ingestion, and Streamlit for interactive visualization, it provides actionable insights into air quality trends through six dynamic dashboards. The multi-layered architecture ensures efficient data processing, while the automation eliminates manual intervention, making it a reliable system for continuous monitoring. This pipeline not only demonstrates modern data engineering practices but also lays a strong foundation for future enhancements, such as integrating additional data sources or expanding to other environmental metrics.
 
+
 ## Contributing
 
 Contributions are welcome! If you'd like to improve the project or fix issues, feel free to open a pull request.
+
 
 ## Contact
 
